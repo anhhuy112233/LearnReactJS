@@ -1,10 +1,6 @@
+import "./GlobalStyle.css";
 
-function GlobalStyle({ children }) {
-    return (
-        <div>
-            {children}
-        </div>
-    );
+function GlobalStyles({ children }) {
+  return children;
 }
-
-export default GlobalStyle;
+export default GlobalStyles;

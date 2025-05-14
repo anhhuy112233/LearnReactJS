@@ -1,21 +1,14 @@
-import Heading from "./components/Heading";
-import Pragraph from "./components/Pragraph";
-import GlobalStyle from "./components/GlobalStyle";
-function App() {
-  return (
-    <div className="App">
-      <GlobalStyle>
-        <Heading />
-        <Pragraph />
+import Button from "./components/Button/index";
+import GlobalStyles from "./components/GlobalStyle";
 
-        <div className="d-flex">
-          <Heading />
-          <Pragraph />
-        </div>
-        
-      </GlobalStyle>
-    </div>
+export default function App() {
+  return (
+    <GlobalStyles>
+      <div>
+        <Button />
+        <Button primary />
+        <Button primary disabled>Click me</Button>
+      </div>
+    </GlobalStyles>
   );
 }
-
-export default App;
